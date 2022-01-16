@@ -1,0 +1,176 @@
+.form {
+  &__group {
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    font-size: 16px;
+    font-family: inherit;
+    color: $color-grey-dark-4;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: $color-white;
+    border: 1px solid $color-secondary;
+    width: 420px;
+    display: block;
+    transition: all 0.3s;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $color-black;
+    }
+
+    /*  &:focus:invalid {
+      border: 1px solid red;
+    } */
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark-2;
+    }
+  }
+
+  &__label {
+    color: $color-grey-dark-4;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+    transition: all 0.3s;
+
+    span {
+      color: $color-grey-dark-2;
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+
+  &__input-error {
+    border: 1px solid red;
+  }
+
+  &__error {
+    margin-top: 5px;
+    font-size: 14pxrem;
+    color: red;
+    font-weight: 400;
+  }
+
+  &__card {
+    background-color: $color-white;
+    border-radius: 5px;
+    position: relative;
+    width: 195px;
+
+    &:hover {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__radio {
+    font-size: inherit;
+    margin: 0;
+    position: absolute;
+    right: calc(16px + 2px);
+    top: calc(16px + 2px);
+    visibility: hidden;
+  }
+
+  @supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    &__radio {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: #fff;
+      border: 2px solid #e2ebf6;
+      border-radius: 50%;
+      cursor: pointer;
+      height: 20px;
+      outline: none;
+      transition: background 0.2s ease-out border-color 0.2s ease-out;
+      width: 20px;
+
+      &::after {
+        border: 2px solid #fff;
+        border-top: 0;
+        border-left: 0;
+        content: "";
+        display: block;
+        height: 0.75rem;
+        left: 25%;
+        position: absolute;
+        top: 50%;
+        transform: rotate(45deg) translate(-50%, -50%);
+        width: 0.375rem;
+      }
+
+      &:checked {
+        background: $color-primary;
+        border-color: $color-primary;
+      }
+    }
+
+    &__card:hover .form__radio {
+      border-color: #c4d1e1;
+
+      &:checked {
+        border-color: $color-primary;
+      }
+    }
+  }
+
+  .plan__details {
+    border: 2px solid #e2ebf6;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    transition: border-color 0.2s ease-out;
+  }
+
+  &__card:hover .plan__details {
+    border-color: #c4d1e1;
+  }
+
+  &__radio:checked ~ .plan__details {
+    border-color: $color-primary;
+  }
+
+  &__radio:focus ~ .plan__details {
+    box-shadow: 0 0 0 2px #c4d1e1;
+  }
+
+  &__radio:disabled ~ .plan__details {
+    color: #c4d1e1;
+    cursor: default;
+  }
+
+  &__card:hover .radio:disabled ~ .plan__details {
+    border-color: #e2ebf6;
+    box-shadow: none;
+  }
+
+  &__card:hover .form__radio:disabled {
+    border-color: #e2ebf6;
+  }
+
+  .plan__type {
+    width: 24px;
+    color: $color-primary;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+  .plan__title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 0;
+    color: $color-grey-dark-4;
+  }
+
+  .plan__text {
+    font-size: 16px;
+    color: $color-grey-dark-2;
+  }
+}

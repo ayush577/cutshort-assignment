@@ -1,4 +1,6 @@
-#Cutshort Assignment - Website Repo(./src/assets/Design.jpg)
+#Cutshort Assignment - Website Repo
+
+![Design preview](./src/assets/Design.png)
 
 ## Welcome! 👋
 

@@ -6,7 +6,7 @@
   margin-top: 15vh;
 
   @include media("<=tablet") {
-    margin-top: 10vh;
+    margin-top: 8vh;
   }
 
   .logo {
@@ -14,7 +14,7 @@
     margin-bottom: 10vh;
 
     @include media("<=tablet") {
-      margin-bottom: 8vh;
+      margin-bottom: 5vh;
     }
 
     img {
@@ -42,10 +42,18 @@
       font-weight: 700;
       color: $color-grey-dark-4;
       letter-spacing: -0.5px;
+
+      @include media("<=tablet") {
+        font-size: 25px;
+      }
     }
     p {
       font-size: 16px;
       color: $color-grey-dark-2;
+
+      @include media("<=tablet") {
+        font-size: 14px;
+      }
     }
 
     &-icon {

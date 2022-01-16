@@ -281,7 +281,7 @@ const OnboardingThree = ({ data, update, onClick }) => {
                   </div>
 
                   {/* Second Card */}
-                  <div className="form__card mb-4">
+                  <div className="form__card">
                     <label>
                       <Field
                         name="picked"
@@ -304,7 +304,7 @@ const OnboardingThree = ({ data, update, onClick }) => {
                 {/* Picked One */}
                 {/* <div>Picked: {values.picked}</div> */}
 
-                <button className="big__btn" type="submit">
+                <button className="big__btn mt-4" type="submit">
                   Create Workspace
                 </button>
               </Form>

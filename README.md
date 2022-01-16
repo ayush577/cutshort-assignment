@@ -42,5 +42,5 @@ npm run build
 - [x] Sign Up Process Steps
   - [x] User Info
   - [x] Workspace Info
-  - [x] Choose for Personal or Team
+  - [x] Choose Space for Personal or Team
   - [x] Congrates

@@ -16,6 +16,10 @@
     //Change for the <button> element
     border: none;
     cursor: pointer;
+
+    @include media("<=tablet") {
+      width: 100%;
+    }
   }
 
   &:hover {

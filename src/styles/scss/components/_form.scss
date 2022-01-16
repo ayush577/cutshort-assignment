@@ -17,6 +17,10 @@
     -webkit-appearance: none;
     box-shadow: none !important;
 
+    @include media("<=tablet") {
+      width: 100%;
+    }
+
     &:focus {
       outline: none;
       border: 1px solid $color-black;

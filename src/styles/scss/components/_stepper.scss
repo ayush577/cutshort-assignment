@@ -1,6 +1,10 @@
 .stepper {
   width: 500px;
 
+  @include media("<=tablet") {
+    width: 380px;
+  }
+
   .steps {
     display: flex;
     width: 100%;

@@ -281,7 +281,7 @@ const OnboardingThree = ({ data, update, onClick }) => {
                   </div>
 
                   {/* Second Card */}
-                  <div className="form__card">
+                  <div className="form__card mb-4">
                     <label>
                       <Field
                         name="picked"
